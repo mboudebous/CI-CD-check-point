@@ -35,6 +35,12 @@ pipeline {
                   
                   }
                   } 
+                  
+    stage ("Lancement des Tests Unitaires"){
+		steps{
+			sh "mvn test"
+				}
+		}              
         	
     }
 }
