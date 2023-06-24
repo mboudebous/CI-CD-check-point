@@ -28,6 +28,13 @@ pipeline {
                 }
             }
         }
+      
+   stage ('creation livrable') {  
+             steps {
+                  sh "mvn package -DskipTests=true"
+                  
+                  }
+                  } 
         	
     }
 }
