@@ -10,7 +10,7 @@ pipeline {
         stage ('GIT') {
              steps {
                 echo "Getting Project from Git"; 
-                git branch:"master", url : "https://github.com/haifgh/Devops-gomycode.git"; 
+                git branch:"main", url : "https://github.com/sami1895/projetjenkins1.git"; 
              }
           }
 
