@@ -51,7 +51,7 @@ private static final Logger log = LogManager.getLogger(UserServiceImplTest.class
 		public void testModifyUser() throws ParseException   {
 			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 			Date d = dateFormat.parse("2015-03-23");
-			User u = new User(10L, "Maroua", "Maroua112", d, Role.INGENIEUR); 
+			User u = new User(10L, "Maroua", "Maroua11", d, Role.INGENIEUR); 
 			User userUpdated  = us.updateUser(u); 
 			Assert.assertEquals(u.getLastName(), userUpdated.getLastName());
 			log.info("user modifié avec succès");
@@ -59,14 +59,14 @@ private static final Logger log = LogManager.getLogger(UserServiceImplTest.class
 	
 		@Test
 		public void testRetrieveUser() {
-			User userRetrieved = us.retrieveUser("1"); 
-			Assert.assertEquals(1L, userRetrieved.getId().longValue());
+			User userRetrieved = us.retrieveUser("12"); 
+			Assert.assertEquals(12L, userRetrieved.getId().longValue());
 			log.info(" retrieve user: " + us);
 		}
 		
 		@Test
 		public void testDeleteUser() {
-			us.deleteUser("2");
+			us.deleteUser("17");
 			//Assert.assertNull(us.retrieveUser("2"));
 			log.info(" user supprimé avec succès");
 		}
