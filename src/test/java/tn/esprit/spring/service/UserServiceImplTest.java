@@ -66,8 +66,8 @@ private static final Logger log = LogManager.getLogger(UserServiceImplTest.class
 		
 		@Test
 		public void testDeleteUser() {
-			us.deleteUser("17");
-			//Assert.assertNull(us.retrieveUser("2"));
+			us.deleteUser("1");
+			//Assert.assertNull(us.retrieveUser("1"));
 			log.info(" user supprimé avec succès");
 		}
 		
