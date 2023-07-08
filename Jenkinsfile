@@ -6,7 +6,7 @@ pipeline {
         // This can be http or https
         NEXUS_PROTOCOL = "http"
         // Where your Nexus is running
-        NEXUS_URL = "localhost:8081"
+        NEXUS_URL = "localhost:8081/Nexus"
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "Releases"
         // Jenkins credential id to authenticate to Nexus OSS
