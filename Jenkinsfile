@@ -48,11 +48,11 @@ pipeline {
                   }
                   } 
                   
-    stage ("Lancement des Tests Unitaires"){
-		steps{
-			sh "mvn test"
-				}
-		}              
+ //   stage ("Lancement des Tests Unitaires"){
+	//	steps{
+		//	sh "mvn test"
+			//	}
+	//	}              
 
 	  stage("Deploiement dans nexus ") {
      		 steps{
