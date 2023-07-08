@@ -56,7 +56,7 @@ pipeline {
 
 	  stage("Deploiement dans nexus ") {
      		 steps{
-			 sh "mvn deploy"
+			 sh "mvn deploy  -DskipTests=true"
                           }
   			
                 }  
